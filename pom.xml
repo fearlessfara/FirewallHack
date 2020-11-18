@@ -61,6 +61,13 @@
             <artifactId>selenium-java</artifactId>
             <version>4.0.0-alpha-7</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>30.0-jre</version>
+        </dependency>
+
     </dependencies>
 
 

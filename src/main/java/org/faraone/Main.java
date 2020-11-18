@@ -1,6 +1,8 @@
 package org.faraone;
 
+import com.google.common.base.Preconditions;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,13 +35,15 @@ public class Main {
 
     public static void main(String[] args) {
         systemProperties = System.getProperties();
-        systemProperties.getProperty("sun.desktop");
+        System.out.println(systemProperties.getProperty("sun.desktop"));
 
         String browser = args[0];
         String username = args[1];
         String password = args[2];
-        System.out.println(username + " - " + password);
 
+        Preconditions.checkArgument(StringUtils.isBlank(browser), "Empty browser name.");
+        Preconditions.checkArgument(StringUtils.isBlank(username), "Empty username.");
+        Preconditions.checkArgument(StringUtils.isBlank(password), "Empty password.");
 
         driver = getDriver(browser);
 

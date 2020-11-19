@@ -19,7 +19,7 @@ After that, compile the code using<br />
 # How to Run the JAR File
 To run the JAR you can have two choice. The first is to use directly the command line typing the command<br />
   <p align="center">java -jar FirewallHack.jar</p><br />
-or you can create a .bat fle that contains the previous command and run it directly.
+or you can create a .bat file that contains the previous command and run it directly.
 To let it work correctly, you should specify the path of the JAR File(if it is not in the same folder of the .bat file)
 
 # Parameters
@@ -29,4 +29,4 @@ the most common supported browser are chrome, opera, mozilla, edge, ie.
 Example of launch<br />
   <p align="center">java -jar FirewallHack.jar chrome userpippo passwordpippo</p><br />
 
-# Enjoy surfing on the PornFreeInternet
+# Enjoy surfing the web

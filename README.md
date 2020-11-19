@@ -13,12 +13,12 @@ Who wants to do that have to download the binary of Maven from the Official Webs
 like for the Java JDK Environment Variables setting up process, you have to set the /bin folder of Maven into Path Variables.
 Remember, if you do that you should move the entire BinaryMavenFolder from the download location to a safe folder like the root of the OS disk.
 After that, compile the code using<br />
-  [mvn clean install]<br />
+  <p align="center">mvn clean install</p><br />
  it will return a JAR file into the /target folder
  
 # How to Run the JAR File
 To run the JAR you can have two choice. The first is to use directly the command line typing the command<br />
-  [java -jar FirewallHack.jar]<br />
+  <p align="center">java -jar FirewallHack.jar</p><br />
 or you can create a .bat fle that contains the previous command and run it directly.
 To let it work correctly, you should specify the path of the JAR File(if it is not in the same folder of the .bat file)
 
@@ -27,6 +27,6 @@ When you run the JAR using the command we said before, you have to pass three di
 (in the order as we write here)
 the most common supported browser are chrome, opera, mozilla, edge, ie.
 Example of launch<br />
-  [java -jar FirewallHack.jar chrome userpippo passwordpippo]<br />
+  <p align="center">java -jar FirewallHack.jar chrome userpippo passwordpippo</p><br />
 
-# Enjoy your surfing on the PornFreeInternet
+# Enjoy surfing on the PornFreeInternet

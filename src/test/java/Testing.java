@@ -1,14 +1,25 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.faraone.Main;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.mockito.ArgumentMatchers;
+import org.mockito.Mock;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.opera.OperaDriver;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static reactor.core.publisher.Mono.when;
 
 public class Testing {
-    private WebDriver driver;
+
+    private WebDriver realDriver;
+
+    @Mock
+    private WebDriver webDriver;
+
 
     @BeforeClass
     public static void setupClass() {
@@ -17,13 +28,13 @@ public class Testing {
 
     @Before
     public void setupTest() {
-        driver = new EdgeDriver();
+        realDriver = new EdgeDriver();
     }
 
     @After
     public void teardown() {
-        if (driver != null) {
-            driver.quit();
+        if (realDriver != null) {
+            realDriver.quit();
         }
     }
 
